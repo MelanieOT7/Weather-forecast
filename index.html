@@ -7,25 +7,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-      </div>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <h1>Paris</h1>
-        <div>
-          This project was coded by
-          <p>
-            Tuesday 14:49, scaattered clouds
-            <br />
-            Humidity: 66%, wind: 3.13km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city">Paris</h1>
+            <p class="weather-app-details">
+              Tuesday 14:49, scaattered clouds
+              <br />
+              Humidity: <strong>66%</strong> , wind: <strong>3.13km/h</strong>
+            </p>
+          </div>
+
+          <div class="weather-app-temperature"><div class="" 12℃</div>
         </div>
-        <div>🌤 12℃</div>
       </main>
 
       <footer>
@@ -36,9 +43,10 @@
         >
         and
         <a href="https://weather-forecast-moteo.netlify.app/">
-          hosted on Netlify</a
-        >
+          hosted on Netlify
+        </a>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
